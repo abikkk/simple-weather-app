@@ -36,6 +36,15 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   weather_icons:
+  http:
+  animated_text_kit:
+  get:
+  shared_preferences:
+  modal_progress_hud_nsn:
+  flutter_advanced_drawer: 
+  hive:
+  hive_flutter:
+  path_provider:
 
 dev_dependencies:
   flutter_test:

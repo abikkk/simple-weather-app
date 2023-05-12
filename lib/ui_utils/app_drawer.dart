@@ -36,10 +36,10 @@ class _AppDrawerState extends State<AppDrawer> {
                     ],
                   ),
                 ),
-                LocationRow(
+                const LocationRow(
                   location: 'Pokhara',
                 ),
-                LocationRow(location: 'Kathmandu'),
+                const LocationRow(location: 'Kathmandu'),
               ],
             ),
           ),
