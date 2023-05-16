@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather/ui_utils/app_theme_data.dart';
+import 'package:weather/utils/app_theme_data.dart';
 
 class WeekView extends StatefulWidget {
   const WeekView(

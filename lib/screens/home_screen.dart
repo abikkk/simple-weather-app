@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weather/ui_utils/app_drawer.dart';
-import 'package:weather/ui_utils/week_view.dart';
+import 'package:weather/utils/app_drawer.dart';
+import 'package:weather/utils/week_view.dart';
 import 'package:weather_icons/weather_icons.dart';
-import '../ui_utils/app_theme_data.dart';
+import '../utils/app_theme_data.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});

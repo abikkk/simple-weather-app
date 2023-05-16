@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather/ui_utils/app_theme_data.dart';
+import 'package:weather/utils/app_theme_data.dart';
+import 'package:weather/utils/function_utils.dart';
 
 class AppDrawer extends StatefulWidget {
   const AppDrawer({super.key});
@@ -76,7 +77,9 @@ class _LocationRowState extends State<LocationRow> {
           child: Row(
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  FuntionUtils.getWeather('Pokhara');
+                },
                 child: Text(
                   widget.location.toString(),
                   style: AppThemeData.appThemeData.textTheme.bodyLarge,
