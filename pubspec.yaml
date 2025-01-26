@@ -41,13 +41,10 @@ dependencies:
   get:
   shared_preferences:
   modal_progress_hud_nsn:
-  flutter_advanced_drawer: 
-  # hive:
-  # hive_flutter:
-  # path_provider:
-  open_weather_api_client: ^3.1.1
-  geolocator: ^8.2.0
-  geocoding: ^2.0.4
+  flutter_advanced_drawer:
+  open_weather_api_client:
+  geolocator:
+  geocoding:
 
 dev_dependencies:
   flutter_test:

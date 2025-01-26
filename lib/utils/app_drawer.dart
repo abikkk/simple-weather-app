@@ -12,46 +12,21 @@ class AppDrawer extends StatefulWidget {
 class _AppDrawerState extends State<AppDrawer> {
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return const Drawer(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
+            padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
             child: Column(
               children: [
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 0.0, vertical: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Options',
-                        style:
-                            AppThemeData.appThemeData.textTheme.displayMedium,
-                      ),
-                      IconButton(
-                          onPressed: () {}, icon: const Icon(Icons.settings)),
-                    ],
-                  ),
+                LocationRow(
+                  location: 'Refresh data',
                 ),
-                const LocationRow(
-                  location: 'Pokhara',
-                ),
-                const LocationRow(location: 'Kathmandu'),
               ],
             ),
           ),
-          Column(
-            children: [
-              const Divider(
-                thickness: 1,
-              ),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
-            ],
-          )
         ],
       ),
     );

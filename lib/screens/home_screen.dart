@@ -31,18 +31,38 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        iconTheme: AppThemeData.appThemeData.iconTheme,
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: Colors.transparent,
+      // iconTheme: AppThemeData.appThemeData.iconTheme,
+      // actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.refresh))],
+      // ),
+      // drawer: const AppDrawer(),
+      floatingActionButton: ElevatedButton(
+        onPressed: () {},
+        style: ElevatedButton.styleFrom(
+            elevation: 0,
+            backgroundColor: Colors.transparent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            )),
+        child: const Icon(
+          Icons.refresh,
+          color: Colors.black87,
+        ),
       ),
-      drawer: const AppDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Center(
             child: Column(
               children: [
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.end,
+                //   children: [
+                //     IconButton(onPressed: (){}, icon: const Icon(Icons.refresh)),
+                //   ],
+                // ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 30.0),
                   child: Column(
